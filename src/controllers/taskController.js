@@ -1,4 +1,6 @@
 const Task = require("../models/Task");
+const authMiddleware = require("../middlewares/authMiddleware");
+
 
 // Listar todas as tarefas
 exports.getAllTasks = async (req, res) => {
